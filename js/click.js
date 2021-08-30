@@ -18,7 +18,6 @@ var young = 0;
 var strGuest = '';
 var strBoth = '';
 
-
 function plus(directPlus) {
   directPlus.addEventListener('click', () => {
     old += 1;
@@ -224,8 +223,6 @@ function minusBoth(directMinus) {
       if ( both === 1 || both === 21 ) {
         strBoth = 'младенец';
         counter.value = ` ${both} ${strBoth}`;
-      } else if ( young + old === 0 ) {
-        counter.value = `${both} ${strBoth}`;
       } else if ( both >= 2 && both <= 4 || both >= 22 && both <= 24 ) {
         strBoth = 'младенеца';
         counter.value = ` ${both} ${strBoth}`;

@@ -59,6 +59,7 @@ button {
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
+	background: #FFFFFF;
 }
 
 /*Бургер*/
@@ -210,39 +211,29 @@ button {
 	display:none;
 	position:absolute;
 	padding:25px 35px 0 0;
+	text-align: center;
 }
 
-.list ul li ul li {
-	width:80px;
-	height:30px;
+.list ul li ul li:hover {
+	opacity: 0.8;
 }
 
 .list ul li ul li {
 	border:1px solid grey;
 	background:white;
+	width:100%;
+	height:100%;
+	border-radius: 5px;
+	font-size: 16px;
 }
 
 .list ul li:hover ul {
 	display:block;
 }
 
-.list ul li:hover > a{
-	opacity: 0.5;
+.list ul li a:hover{
+	color: rgba(31, 32, 65, 0.75);
 }
-
-.list ul li:hover {
-	opacity: 0.5;
-}
-
-/*#arrow_list_li:after {
-	content:'';
-	width:15px;
-	height:10px;
-	display:inline-block;
-	background:url(image/expand_more.svg);
-	background-repeat:no-repeat;
-	margin:2px 0 0 2px;
-}*/
 
 .menu_list {
 	margin:0;
@@ -259,10 +250,10 @@ button {
 	align-items: center;
 	text-align: center;
 }
-
+/* 
 .header img {
 	padding-left:10px;
-}
+} */
 
 
 /*панель входа и регистрации*/
@@ -375,13 +366,11 @@ button {
 }
 
 /*Календарь*/
-.calendar_main {
-	height:369px;
-	width:320px;
-	z-index:1;
-	position:relative;
-	top:-30px;
-	left:-17px;
+.datepicker-left {
+	z-index:3;
+	position:absolute;
+	top: 2px;
+	left: 0;
 }
 
 .calendar {
@@ -396,6 +385,30 @@ button {
 	line-height:15px;
 	box-shadow:0px 10px 20px rgba(31, 32, 65, 0.05);
 	margin-top: 50px;
+}
+
+.text-field-calendar {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.search_room .text-field-calendar .datepicker-here {
+	width: 140px;
+	padding: 12px 32px 8.44px 15px;
+	height: 22px;
+}
+
+.search_room .datepicker {
+	width: 320px;
+}
+
+.search_room .date_departure {
+	padding: 0;
+}
+
+.search_room .date_arrival {
+	padding: 0;
 }
 
 #dateCalendare {
@@ -784,8 +797,9 @@ button {
 
 .footer {
 	height:392px;
-	box-shadow: 0 1px 0px rgba(31, 32, 65, 0.1);
+	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 	border-top:1px solid #D0D0D5;
+	background: #FFFFFF;
 }
 
 /*Список блоков*/
@@ -891,9 +905,10 @@ button {
 
 /*Под футером*/
 .footer_sub {
-	box-shadow:0px 10px 20px rgba(31, 32, 65, 0.05);
-	padding:26px 0 15px 0;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+	padding:25px 0 15px 0;
 	color:rgba(31, 32, 65, 0.75);
+	background: #FFFFFF;
 }
 
 .footer_sub_container {
@@ -926,6 +941,44 @@ button {
 
 .footer_sub_container p {
 	margin-top: 0;
+}
+
+.footer-mobile {
+	width: 560px;
+	height: 127px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+	margin: 0 auto;
+	padding: 120px 104px;
+	text-align: center;
+}
+
+.footer-mobile .footer_sub {
+	box-shadow: none;
+	width: 112px;
+}
+
+.footer-mobile .sub_icons {
+	width: 100%;
+}
+
+.footer-mobile .logo{
+	margin: 0 auto;
+	width: auto;
+}
+
+.footer-mobile p {
+	margin: 20px auto 0 auto;
+}
+
+.footer-mobile .footer_sub {
+	margin: 0 auto;
+}
+
+.hiden_clear {
+	opacity: 0;
+	cursor: default;
+	user-select: none;
 }
 
 /*Адаптивная верстка (для смартфонов)*/

@@ -325,6 +325,7 @@
 	width:270px;
 	height:257px;
 	margin:0 12px 12px 0;
+	background: #FFF;
 	background-repeat:no-repeat;
 	box-shadow:0px 10px 20px rgba(31, 32, 65, 0.05);
 	border-radius:4px;
@@ -338,41 +339,41 @@
 }
 
 
-.room1{
-	background:url(../image/room_1.png);
+.room1 .container {
+	background:url(../image/1_room.png);
 }
-.room2{
-	background:url(../image/room_2.png);
+.room2 .container{
+	background:url(../image/2_room.png);
 }
-.room3{
-	background:url(../image/room_3.png);
+.room3 .container{
+	background:url(../image/3_room.png);
 }
-.room4{
-	background:url(../image/room_4.png);
+.room4 .container{
+	background:url(../image/4_room.png);
 }
-.room5{
-	background:url(../image/room_5.png);
+.room5 .container{
+	background:url(../image/5_room.png);
 }
-.room6{
-	background:url(../image/room_6.png);
+.room6 .container{
+	background:url(../image/6_room.png);
 }
-.room7{
-	background:url(../image/room_7.png);
+.room7 .container{
+	background:url(../image/7_room.png);
 }
-.room8{
-	background:url(../image/room_8.png);
+.room8 .container{
+	background:url(../image/8_room.png);
 }
-.room9{
-	background:url(../image/room_9.png);
+.room9 .container{
+	background:url(../image/9_room.png);
 }
-.room10{
-	background:url(../image/room_10.png);
+.room10 .container{
+	background:url(../image/10_room.png);
 }
-.room11{
-	background:url(../image/room_11.png);
+.room11 .container{
+	background:url(../image/11_room.png);
 }
-.room12{
-	background:url(../image/room_12.png);
+.room12 .container{
+	background:url(../image/12_room.png);
 }
 /*Перелистывания картинок комнат (стрелки)*/
 
@@ -519,6 +520,17 @@
 	padding-right:22px;
 	background-image:url(../image/star.svg);
 	background-repeat:no-repeat;
+	cursor: pointer;
+}
+
+.link-for-room {
+	width: 100%;
+	height: 105px;
+	display: block;
+}
+
+.link-for-room:hover {
+	color: #BC9CFF;
 }
 
 /*Звезды без оценки*/
@@ -531,13 +543,40 @@
 	cursor:pointer;
 }
 
-.stars_border:hover {
+.room_in_hotel .stars:hover {
 	background-image:url(../image/star.svg);
 }
 
+.room2 #star5 {
+	background-image: url(../image/star_border.svg)
+}
 
-#star5:hover > #star4 {
-	background-image:url(../image/star.svg);
+.room3 #star5,.room3 #star4 {
+	background-image: url(../image/star_border.svg)
+}
+
+.room5 #star5 {
+	background-image: url(../image/star_border.svg)
+}
+
+.room6 #star5,.room6 #star4 {
+	background-image: url(../image/star_border.svg)
+}
+
+.room8 #star5 {
+	background-image: url(../image/star_border.svg)
+}
+
+.room9 #star5,.room9 #star4 {
+	background-image: url(../image/star_border.svg)
+}
+
+.room11 #star5,.room11 #star4 {
+	background-image: url(../image/star_border.svg)
+}
+
+.room12 #star5,.room12 #star4 {
+	background-image: url(../image/star_border.svg)
 }
 
 /*Отзывы*/
@@ -583,8 +622,8 @@
 	border-radius:50%;
 }
 
-.room_in_hotel .container .circle:first-child {
-	background:#fff;
+.circle_1 {
+	background: rgba(255, 255, 255);
 }
 
 .room_in_hotel .container .circle:last-child {

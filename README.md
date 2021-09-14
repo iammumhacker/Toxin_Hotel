@@ -12,7 +12,7 @@
 ## Использованные библиотеки
 [jQuery](https://github.com/jquery/jquery),
 [air-datepicker](https://github.com/t1m0n/air-datepicker),
-[Chart.js]https://www.chartjs.org/docs/latest/
+[Chart.js](https://www.chartjs.org/docs/latest/)
 
 ---
 ## Website pages

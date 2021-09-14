@@ -389,9 +389,21 @@ button {
 
 .text-field-calendar {
 	position: absolute;
-	opacity: 0;
 	top: 0;
 	left: 0;
+}
+
+.text-field-calendar:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 18px;
+	right: 15px;
+	width: 12px;
+	height: 8px;
+	background-image: url(../image/expand_more.svg);
+	z-index: 5;
+	pointer-events: none;
 }
 
 .search_room .text-field-calendar .datepicker-here {

@@ -85,18 +85,22 @@ block content
                         div.booking_arrival
                             div.container_arrival
                                 h2 прибытие
-                                div.date_arrival ДД.ММ.ГГГГ
+                                input.datepicker-here.field-date-left(type="text" 
+                                                    data-range="true" 
+                                                    data-multiple-dates-separator=" - " 
+                                                    data-language="ru" 
+                                                    placeholder="ДД.ММ.ГГГГ")
                                 div.arrow
-
-                                include ../modules/calendar.pug
 
                             div.container_departure
                                 h2 выезд
-                                div.date_departure ДД.ММ.ГГГГ
+                                input.datepicker-here.field-date-left(type="text" 
+                                                    data-range="true" 
+                                                    data-multiple-dates-separator=" - " 
+                                                    data-language="ru" 
+                                                    placeholder="ДД.ММ.ГГГГ")
                                 div.arrow
                                 
-                                include ../modules/calendar.pug
-
                         div.booking_guests
                             h2 гости
                             div.guests
